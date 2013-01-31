@@ -6,11 +6,13 @@ CakePHP-Date-Format-Helper
 <h2>Description</h2>
 <p>This is a simple helper that allows you to consistently format dates throughout your application. If someone suddenly decides that dates should look like 1/1/2013 instead of 01-01-2013, you will just need to change it in one place. It includes options to display either the date part or time part or both. It also includes the option to pass in a time offset for dealing with timezones.</p>
 
+<p>I created this when working on a project where the client changed their mind several times about how dates should be formatted on the site. This allowed me to easily make this change in one place.</p>
+
 <h2>Requirements</h2>
 CakePHP 2.x
 
 <h2>Installation</h2>
-<p>Copy the DateFormatHelper.php file to <code>/app/View/Helper directory.</code></p>
+<p>Copy the DateFormatHelper.php file to <code>/app/View/Helper</code></p>
 
 <h2>Setup</h2>
 <p>If you want the Date Format helper available to all controllers, enable it using the <code>$helpers</code> property in /app/Controller/AppController.php:</p>
@@ -20,6 +22,8 @@ CakePHP 2.x
 <pre><code>public $helpers = array('Html', 'Session', 'Form', 'Text', 'DateFormat');</code></pre>
 
 <h2>Usage</h2>
+<p>Use the following to format a date when displaying in a view:</p>
+<pre><code>echo $this->DateFormat->formatDate(strDate, true, false);</code></pre>
 
 <h2>License</h2>
 <p>Copyright (c) 2013 William Rollins</p>
