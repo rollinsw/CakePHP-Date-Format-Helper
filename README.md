@@ -10,7 +10,7 @@ CakePHP-Date-Format-Helper
 CakePHP 2.x
 
 <h2>Installation</h2>
-
+Place the DateFormatHelper.php file in /app/View/Helper
 
 <h2>Setup</h2>
 <p>If you want the Date Format helper available to all controllers, enable it using the <code>$helpers</code> property in /app/Controller/AppController.php:</p>
