@@ -26,17 +26,28 @@ CakePHP 2.x
 <ul>
 <li><strong>displayDatePart:</strong> True/False display the date portion</li>
 <li><strong>displayTimePart:</strong> True/False display the time portion</li>
-<li><strong>offset:</strong> An offset for the date in hours.</li>
+<li><strong>offset:</strong> An offset for the date in hours. Intended to be used to adjust date/time based on timezones.</li>
 </ul>
-
 </p>
-<pre><code>echo $this->DateFormat->formatDate($yourDateStringHere, array(
+
+<pre><code>
+$myDate = '2013-01-21 15:56:41';
+
+// Would echo something like: 1/21/2013
+echo $this->DateFormat->formatDate($yourDateStringHere, array(
+	'displayDatePart'=>true, 
+	'displayTimePart'=>false, 
+	'offset'=>-5)
+);
+
+// Would echo something like: 1/21/2013 10:56
+echo $this->DateFormat->formatDate($yourDateStringHere, array(
 	'displayDatePart'=>true, 
 	'displayTimePart'=>true, 
 	'offset'=>-5)
-);</code></pre>
-
-These are the 
+);
+// Would echo something like 1/21/2013
+</code></pre>
 
 <h2>License</h2>
 <p>Copyright (c) 2013 William Rollins</p>
