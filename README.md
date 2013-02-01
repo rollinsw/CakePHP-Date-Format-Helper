@@ -23,7 +23,11 @@ CakePHP 2.x
 
 <h2>Usage</h2>
 <p>Use the following to format a date when displaying in a view:</p>
-<pre><code>echo $this->DateFormat->formatDate($yourDateStringHere, array('displayDatePart'=>true, 'displayTimePart'=>true, 'offset'=>-5));</code></pre>
+<pre><code>echo $this->DateFormat->formatDate($yourDateStringHere, array(
+	'displayDatePart'=>true, 
+	'displayTimePart'=>true, 
+	'offset'=>-5)
+);</code></pre>
 
 <h2>License</h2>
 <p>Copyright (c) 2013 William Rollins</p>
