@@ -1,7 +1,7 @@
 CakePHP-Date-Format-Helper
 ==========================
 
-<p>TestA CakePHP helper to format dates consistently throughout an application</p>
+<p>A CakePHP helper to format dates consistently throughout an application</p>
 
 <h2>Description</h2>
 <p>This is a simple helper that allows you to consistently format dates throughout your application. If someone suddenly decides that dates should look like 1/1/2013 instead of 01-01-2013, you will just need to change it in one place. It includes options to display either the date part or time part or both. It also includes the option to pass in a time offset for dealing with timezones.</p>
