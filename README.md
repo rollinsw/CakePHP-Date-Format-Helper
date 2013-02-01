@@ -22,12 +22,21 @@ CakePHP 2.x
 <pre><code>public $helpers = array('Html', 'Session', 'Form', 'Text', 'DateFormat');</code></pre>
 
 <h2>Usage</h2>
-<p>Use the following to format a date when displaying in a view:</p>
+<p>Use the following to format a date when displaying in a view: <code>echo $this->DateFormat->formatDate($dateString, $options);</code> where $dateString is your date as a string and $options is an array that contains these options:
+<ul>
+<li><strong>displayDatePart:</strong> True/False display the date portion</li>
+<li><strong>displayTimePart:</strong> True/False display the time portion</li>
+<li><strong>offset:</strong> An offset for the date in hours.</li>
+</ul>
+
+</p>
 <pre><code>echo $this->DateFormat->formatDate($yourDateStringHere, array(
 	'displayDatePart'=>true, 
 	'displayTimePart'=>true, 
 	'offset'=>-5)
 );</code></pre>
+
+These are the 
 
 <h2>License</h2>
 <p>Copyright (c) 2013 William Rollins</p>
