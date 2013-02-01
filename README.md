@@ -15,6 +15,17 @@ CakePHP 2.x
 <p>Copy the <code>DateFormatHelper.php</code> file to <code>/app/View/Helper</code></p>
 
 <h2>Setup</h2>
+<p>Edit the following variable in <code>DateFormatHelper.php</code> to adjust the helper defaults:
+<ul>
+<li><strong>dateOnlyFormat:</strong> PHP date format options to use when only date is displayed</li>
+<li><strong>timeOnlyFormat:</strong> PHP date format options to use when only time is displayed</li>
+<li><strong>dateTimeFormat:</strong> PHP date format options to use when both date and time is displayed</li>
+<li><strong>defaultDatePartDisplay:</strong> True/False default setting for date part display</li>
+<li><strong>defaultTimePartDisplay:</strong> True/False default setting for time part display</li>
+<li><strong>defaultOffset:</strong> Default value for time offset in hours</li>
+</ul>
+</p>
+
 <p>If you want the Date Format helper available to all controllers, enable it using the <code>$helpers</code> property in /app/Controller/AppController.php:</p>
 <pre><code>public $helpers = array('DateFormat');</code></pre>
 
@@ -34,19 +45,18 @@ CakePHP 2.x
 $myDate = '2013-01-21 15:56:41';
 
 // Would echo something like: 1/21/2013
-echo $this->DateFormat->formatDate($yourDateStringHere, array(
+echo $this->DateFormat->formatDate($myDate, array(
 	'displayDatePart'=>true, 
 	'displayTimePart'=>false, 
 	'offset'=>-5)
 );
 
 // Would echo something like: 1/21/2013 10:56
-echo $this->DateFormat->formatDate($yourDateStringHere, array(
+echo $this->DateFormat->formatDate($myDate, array(
 	'displayDatePart'=>true, 
 	'displayTimePart'=>true, 
 	'offset'=>-5)
 );
-// Would echo something like 1/21/2013
 </code></pre>
 
 <h2>License</h2>
