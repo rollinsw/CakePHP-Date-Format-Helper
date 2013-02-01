@@ -19,7 +19,7 @@ CakePHP 2.x
 <ul>
 <li><strong>dateOnlyFormat:</strong> PHP date format options to use when only date is displayed</li>
 <li><strong>timeOnlyFormat:</strong> PHP date format options to use when only time is displayed</li>
-<li><strong>dateTimeFormat:</strong> PHP date format options to use when both date and time is displayed</li>
+<li><strong>dateTimeFormat:</strong> PHP date format options to use when both date and time are displayed</li>
 <li><strong>defaultDatePartDisplay:</strong> True/False default setting for date part display</li>
 <li><strong>defaultTimePartDisplay:</strong> True/False default setting for time part display</li>
 <li><strong>defaultOffset:</strong> Default value for time offset in hours</li>
